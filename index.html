@@ -316,6 +316,40 @@
 
           </tbody></table>
 
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr><h3> Additional Open-Source code</h3></tr>
+
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div  class="one">
+                  <div  class="two" id='enter_sewer_slow'><video  width=100% muted autoplay loop>
+                  <source src="images/enter_sewer_slow.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                </div>
+                
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://github.com/Reytuag/transformerXL_PPO_JAX">
+                  <span class="papertitle">TransformerXL for RL (PPO) in JAX</span>
+                </a>
+                <br>
+
+            <strong>Gautier Hamon<sup>*</sup></strong>,
+          
+                <br>
+                <em>Github</em>
+                <br>
+                <a href="https://github.com/Reytuag/transformerXL_PPO_JAX">Source code</a>
+                <p></p>
+                <p>
+                  Jax implementation of the paper <a href="https://arxiv.org/abs/1910.06764">"Stabilizing Transformers for Reinforcement Learning"</a>. The code follows the <a href="https://github.com/luchris429/purejaxrl">PureJaxRL</a> template to be as clear as possible and can take any <a href=https://github.com/RobertTLange/gymnax>gymnax</a> environment. 
+                  The code has been tested on <a href="https://github.com/MichaelTMatthews/Craftax">Craftax</a> on which it has set a new Sota being the first to obtain advanced acheivements (without much finetuning). Training a 5M transformer on Craftax for 1e9 steps takes 6h on a A100. On <a href="https://github.com/corl-team/xland-minigrid">Xland-minigrid</a> (where environment parallelization is even more advantageous), 
+                  training on 16 000 parallel environments with a 5M transformer reaches speed of 250 000 steps per seconds on a single A100 (so 1e9 steps in a little bit more than an hour).
+               </p>
+              </td>
+            </tr>
+
           
       
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
