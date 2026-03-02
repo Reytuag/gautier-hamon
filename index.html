@@ -25,6 +25,9 @@
                 <p>I completed my PhD at Inria <a href="https://flowers.inria.fr/">FLOWERS team</a> (France) working on open-ended skill acquisition and major transitions in simulated environments: <a href="data/thesis_hamon_gautier.pdf"> Thesis pdf </a>.
                   Including work on reinforcement learning and meta reinforcement learning, evolutionary simulations and self-organization in cellular automata. At the beginning of 2024 I did a 3 month visit in <a href="http://complex.upf.edu/ricard-sol%C3%A9">Ricard Solé's complex system lab</a>.
                 </p>
+                
+                <p> I'm now mostly exploring reinforcement learning for robotics including VLA.</p>
+
                 <p> I have a machine learning background. I obtained my MSc <a href="https://www.master-mva.com/">MVA (Mathematics, Vision, Learning)</a> from Institut Polytechnique de Paris/ENS Paris-Saclay, with highest honors. As well as my Master of Engineering (MEng) from <a href="https://www.telecom-paris.fr/en/home">Télécom Paris</a> (GPA 4.). </p>
                 <p>
                 
@@ -48,7 +51,8 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <h3> Research interests</h3>
-
+                
+                <li> <b>Robotics</b>: Vision language action modelels (VLA), world models</li>
                 <li> <b>Reinforcement learning </b>: Meta-RL, continual learning, open-ended skill acquisition, Multi agents (MARL)</li>
                 <li> <b>Artificial life: cellular automata</b>:, open-ended evolution, major transisition, evolutionary algorithms</li>
               </td>
@@ -385,6 +389,33 @@
                   Jax implementation of the paper <a href="https://arxiv.org/abs/1910.06764">"Stabilizing Transformers for Reinforcement Learning"</a>. The code follows the <a href="https://github.com/luchris429/purejaxrl">PureJaxRL</a> template to be as clear as possible and can take any <a href=https://github.com/RobertTLange/gymnax>gymnax</a> environment. 
                   The code has been tested on <a href="https://github.com/MichaelTMatthews/Craftax">Craftax</a> on which it has set a new Sota being the first to obtain advanced acheivements (without much finetuning). Training a 5M transformer on Craftax for 1e9 steps takes 6h on a A100. On <a href="https://github.com/corl-team/xland-minigrid">Xland-minigrid</a> (where environment parallelization is even more advantageous), 
                   training on 16 000 parallel environments with a 5M transformer reaches speed of 250 000 steps per seconds on a single A100 (so 1e9 steps in a little bit more than an hour).
+               </p>
+              </td>
+            </tr>
+
+            <tr><h3> Personal Projects</h3></tr>
+
+            <tr>
+              <td style="padding:20px;width:25%;vertical-align:middle">
+                <div  class="one">
+                  <div  class="two" id='enter_sewer_slow'><video  width=100% muted autoplay loop>
+                  <source src="images/VLA_libero.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                </div>
+                
+              </td>
+              <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="">
+                  <span class="papertitle">VLA (Vision language action models) on Libero</span>
+                </a>
+                <br>
+
+            <strong>Gautier Hamon<sup>*</sup></strong>,
+
+                <p>
+                Personal project, where I train a VLA on the Libero environment. Taking inspiration from Pi0 and smolVLA I train a flow matching action expert with a gemma 3 (4B) VLM backbone. The code is in JAX and has been made to fit the training on a consumer GPU. 
+                I also began exploring on-policy RL to further finetune the model using <a href="https://arxiv.org/abs/2602.02481">Flow policy optimzation</a>.  
                </p>
               </td>
             </tr>
