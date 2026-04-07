@@ -12,7 +12,44 @@
     
   </head>
 
-  <body>
-    Test
+    <body>
+        <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr style="padding:0px">
+        <td style="padding:0px">
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Exploring RLT from PI
+                </p>
+
+                Small experiments to explore the RLT paper from physicall intelligence: <a href="https://www.pi.website/research/rlt"> webpage </a>.  
+                </p>
+                
+
+              </td>
+
+              <td style="padding:2.5%;width:40%;max-width:40%">
+                <div  class="two" id='sensolenia_image'><video  width=100% muted autoplay loop>
+          <source src="images/libero_smolVLA_task4_spatial.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <tr>
+                The general idea of the paper is to encode the embeddings of the VLM into a tiny RL latent vector that will allow to train a 
+                small RL policy that will learn to adapt the actions proposed by the VLA. 
+                In fact encoding the VLM processing of the state into a small size latent vector helps to have a concise representation of the state. 
+                In addition to being less costly to store, this small representation allows to train the small RL policy in an efficient way without having the big machinery that comes with the VLA/VLM. 
+                
+
+
+          </tr>
+    
+
+
+
     </body>
 </html>
