@@ -43,12 +43,30 @@
 
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
-                The general idea of the paper is to encode the embeddings of the VLM into a tiny RL latent vector that will allow to train a 
+               <p> The general idea of the paper is to encode the embeddings of the VLM into a tiny RL latent vector that will allow to train a 
                 small RL policy that will learn to adapt the actions proposed by the VLA. 
                 In fact encoding the VLM processing of the state into a small size latent vector helps to have a concise representation of the state. 
-                In addition to being less costly to store, this small representation allows to train the small RL policy in an efficient way without having the big machinery that comes with the VLA/VLM. 
+                In addition to being less costly to store, this small representation allows to train the small RL policy in an efficient way without having the big machinery that comes with the VLA/VLM. </p>
 
           </tr>
+
+          <tr>
+              <p> I implemented RLT to improve smolVLA (a small scale VLA) on libero. The training achieved a significant improvement of the success rate over the base poliycy. 
+              Indeed, the success rate went from ~0.6 from the base policy to ~0.8 with RLT. However, I believe that further tuning of the hyperparameters could lead to even better results.
+              In particular, some of the details are not given in the original paper and I'm limited by my computational resources to explore broadly the hyperparameters. 
+              In addition, I currently don't use expert error correction in the RLT training procedure which should greatly improve the performances especially as I would be able to correct error modes. 
+              I plan to introduce this expert correction in the training procedure using a controller and see how it impacts the results.
+              </p>
+
+              <p>
+                The code can be found in this github repository: <a href="https://github.com/Reytuag/lerobot">RLT</a>. I will soon release a cleaner version with minimal files to reproduce the results. 
+                I will update this page as I obtain more results and insights through my experiments.
+              </p>
+          </tr>
+
+          <img src="images/rlt_smolVLA_libero_spatial_4.jpg" alt="success_rate" style="width:100%;max-width:500px;margin-left:auto;margin-right:auto;display:block;">
+
+
         </tbody>
           </table>
     
